@@ -7,7 +7,7 @@ abstract       'swat tests for metacpan.org';
 
 # Specific dependencies
 configure_requires 'File::ShareDir';
-requires       'swat'         => '0.1.46';
+requires       'swat'         => '0.1.48';
 test_requires  'Test::More'   => '0';
 
 install_share  'module' => 'swat::metacpan::web', 'share';    

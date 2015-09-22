@@ -20,7 +20,7 @@ no_index:
     - share
     - t
 requires:
-  swat: 0.1.46
+  swat: 0.1.48
 resources:
   license: http://dev.perl.org/licenses/
 version: 0.1.0
