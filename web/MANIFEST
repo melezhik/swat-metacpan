@@ -20,6 +20,5 @@ share/feed/recent/get.txt
 share/get.txt
 share/host
 share/recent/get.txt
-share/tap.out
 swat.my
 t/00.t
