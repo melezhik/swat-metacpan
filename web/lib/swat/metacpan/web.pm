@@ -1,5 +1,5 @@
 package swat::metacpan::web; 
-our $VERSION = '0.1.2'; 
+our $VERSION = '0.1.3'; 
 1;
 
 __END__
