@@ -20,6 +20,7 @@ share/:find_module/post.txt
 share/:find_module/swat.ini
 share/feed.txt
 share/get.txt
+share/hook.pm
 share/host
 share/recent/get.txt
 swat.my

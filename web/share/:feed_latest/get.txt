@@ -8,8 +8,8 @@ begin:
     regexp: <description>.*<\/description>
     regexp: <dc:creator>\S+<\/dc:creator>
     regexp: <dc:date>(\S+)</dc:date>
+    code: validate_latest_release()
     regexp: <content:encoded>\s+<\/content:encoded>
     regexp: <\/item>
 end:
 
-#2015-09-23T12:14:30Z

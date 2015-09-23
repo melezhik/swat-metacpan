@@ -26,6 +26,14 @@ OR
 
     swat swat::metacpan::web https://metacpan.org
 
+# Settings
+
+- `latest_threshold` - define critical age in hours for a latest release appeared at https://metacpan.org/feed/recent?f= , if latest release's age more then
+_latest\_threshold_ hours test will fail. Default value is _4_.
+
+        # check that releases come to metacpan every 1 hour
+        echo latest_threshold=1 >> swat.my
+
 # COPYRIGHT
 
 Copyright 2015 Alexey Melezhik.
