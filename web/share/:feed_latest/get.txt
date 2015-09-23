@@ -1,0 +1,15 @@
+200 OK
+<title>Recent CPAN uploads - MetaCPAN</title>
+
+begin:
+    regexp: <item rdf:.*>
+    regexp: <title>.*<\/title>
+    regexp: <link>.*<\/link>
+    regexp: <description>.*<\/description>
+    regexp: <dc:creator>\S+<\/dc:creator>
+    regexp: <dc:date>(\S+)</dc:date>
+    regexp: <content:encoded>\s+<\/content:encoded>
+    regexp: <\/item>
+end:
+
+#2015-09-23T12:14:30Z

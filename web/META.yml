@@ -1,5 +1,7 @@
 ---
 abstract: 'swat tests for metacpan.org'
+author:
+  - 'Alexey Melezhik.'
 build_requires:
   ExtUtils::MakeMaker: 6.36
   Test::More: 0
@@ -20,7 +22,9 @@ no_index:
     - share
     - t
 requires:
-  swat: 0.1.48
+  DateTime: 0
+  Time::Piece: '1.30'
+  swat: 0.1.52
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.1.0
+version: 0.1.1
