@@ -14,10 +14,10 @@ This is simple test suit could be used in monitoring/deployment.
 
 =head1 Checks perfomed
 
-- check if landing page is accessible
-- check if modules search is working properly
-- check if latest releases page/feed is accessible and returns not empty results 
-- check if latest release at https://metacpan.org/feed/recent?f= is not older than 4 hours ago
+    - check if landing page is accessible
+    - check if modules search is working properly
+    - check if latest releases page/feed is accessible and returns not empty results 
+    - check if latest release at https://metacpan.org/feed/recent?f= is not older than 4 hours ago
 
 
 =head1 INSTALL
