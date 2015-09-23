@@ -1,5 +1,5 @@
-# 0.1.1
-- check if latest release at https://metacpan.org/feed/recent?f= is not older than 4 hours ago
+# 0.1.2
+- check if latest release at https://metacpan.org/feed/recent?f= is not older than `N hours ago`
 
 
 # 0.1.0
