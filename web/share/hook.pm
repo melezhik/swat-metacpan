@@ -1,6 +1,7 @@
 use DateTime;                                   
 use Time::Piece;                                
 use Data::Dumper;
+use strict;
 
 
 sub validate_latest_release {
@@ -18,20 +19,20 @@ sub validate_latest_release {
         second => $tp->second                        
     );                                          
 
-    my $threshold = DateTime->now->subtract( hours =>  latest_threshold() ); 
-    my $latest_threshold = latest_threshold();
+    my $threshold_date = DateTime->now->subtract( hours =>  latest_rs_age() ); 
+    my $latest_rs_age = latest_rs_age();
 
-    if (DateTime->compare($dt, $threshold) == 1){
-        ok(1,"feed is alive. latest date is: $dt. thershold date is: $threshold. threshold value is: $latest_threshold hours.");
+    if (DateTime->compare($dt, $threshold_date) == 1){
+        ok(1,"feed is alive. latest release date is: $latest_date. thershold date is: $threshold_date. threshold value is: $latest_rs_age hours.");
     }else{
-        ok(0,"feed is not alive. latest date is: $dt. thershold date is: $threshold. threshold value is: $latest_threshold hours.");
+        ok(0,"feed is not alive. latest release date is: $latest_date. thershold date is: $threshold_date. threshold value is: $latest_rs_age hours.");
     }
 
 
 }
 
-sub latest_threshold {
-    $ENV{'latest_threshold'} || 4
+sub latest_rs_age {
+    $ENV{'latest_rs_age'} || 4
 }
 
 1;

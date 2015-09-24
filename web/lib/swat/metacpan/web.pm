@@ -43,11 +43,11 @@ OR
 
 =item *
 
-C<latest_threshold> - define critical age in hours for a latest release appeared at https://metacpan.org/feed/recent?f= , if latest release's age more then
-I<latest_threshold> hours test will fail. Default value is I<4>.
+C<latest_rs_age> - define critical age in hours for a latest release appeared at https://metacpan.org/feed/recent?f= , if latest release's age more then
+I<latest_rs_age> hours this is considered as I<feed freeze failure>. Default value is I<4>.
 
     # check that releases come to metacpan every 1 hour
-    echo latest_threshold=1 >> swat.my
+    echo latest_rs_age=1 >> swat.my
 
 
 =back

@@ -14,11 +14,12 @@ MANIFEST			This list of files
 META.yml
 README
 README.md
-share/:feed_latest/get.txt
-share/:feed_latest/swat.ini
-share/:find_module/post.txt
-share/:find_module/swat.ini
+share/:recent/get.txt
+share/:recent/swat.ini
+share/:search/post.txt
+share/:search/swat.ini
 share/feed.txt
+share/feed/recent/get.txt
 share/get.txt
 share/hook.bash
 share/hook.pm
