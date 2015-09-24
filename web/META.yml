@@ -24,7 +24,7 @@ no_index:
 requires:
   DateTime: 0
   Time::Piece: '1.30'
-  swat: 0.1.52
+  swat: 0.1.53
 resources:
   license: http://dev.perl.org/licenses/
 version: 0.1.3
