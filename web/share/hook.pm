@@ -5,7 +5,8 @@ use Data::Dumper;
 
 sub validate_latest_release {
 
-    my $latest_date = captures()->[0]->[0];
+    my $latest_date = shift;
+
     my $tp = Time::Piece->strptime($latest_date,'%Y-%m-%dT%TZ');  
     
     my $dt = DateTime->new(                     

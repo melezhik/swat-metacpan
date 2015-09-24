@@ -8,7 +8,7 @@ begin:
     regexp: <description>.*<\/description>
     regexp: <dc:creator>\S+<\/dc:creator>
     regexp: <dc:date>(\S+)</dc:date>
-    code: validate_latest_release()
+    code: validate_latest_release( capture()->[0] )
     regexp: <content:encoded>\s+<\/content:encoded>
     regexp: <\/item>
 end:
